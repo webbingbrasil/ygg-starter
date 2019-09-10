@@ -24,7 +24,11 @@ class UserList extends AbstractResource
 
     public function config(): void
     {
-        $this->setDefaultSort('name', 'asc');
+        $this
+            ->setInstanceIdAttribute('id')
+            ->setDefaultSort('name')
+            ->withSearch()
+            ->withPagination();
     }
 
     public function layout(): void
@@ -33,8 +37,15 @@ class UserList extends AbstractResource
         $this->addColumn('email', 8);
     }
 
-    public function data(ResourceQueryParams $params): array
+    public function data(ResourceQueryParams $params)
     {
-        return User::orderBy($params->sortedBy(), $params->sortedDir())->get()->toArray();
+        /** @var User $query */
+        $query = User::orderBy($params->sortedBy(), $params->sortedDir());
+
+        if ($params->hasSearch()) {
+            $query->search($params->searchTerm());
+        }
+
+        return $this->transform($query->paginate());
     }
 }

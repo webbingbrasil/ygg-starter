@@ -7,10 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Ygg\Traits\YggResetPasswordNotification;
+use Ygg\Traits\Searchable;
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable, SoftDeletes, YggResetPasswordNotification;
+    use Notifiable, SoftDeletes, YggResetPasswordNotification, Searchable;
 
     /**
      * The attributes that are mass assignable.
@@ -38,6 +39,13 @@ class User extends Authenticatable implements JWTSubject
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * List of searchable attributes.
+     *
+     * @var array
+     */
+    protected $searchable = ['name', 'email'];
 
     /**
      * Get the identifier that will be stored in the subject claim of the JWT.

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5743a7aa734fe28e481bf426ff16e2cf",
+    "content-hash": "df7b163f41c5d12115c4c740c5f0e076",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3605,12 +3605,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webbingbrasil/ygg-cmf.git",
-                "reference": "0ca0a273192e084ab95ade973e8ec814e49e80d9"
+                "reference": "e7f48250fb7e169e5e41786d96a13be71197f043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/0ca0a273192e084ab95ade973e8ec814e49e80d9",
-                "reference": "0ca0a273192e084ab95ade973e8ec814e49e80d9",
+                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/e7f48250fb7e169e5e41786d96a13be71197f043",
+                "reference": "e7f48250fb7e169e5e41786d96a13be71197f043",
                 "shasum": ""
             },
             "require": {
@@ -3651,7 +3651,7 @@
                 }
             ],
             "description": "One CMF to support all our projects, just as yggdradil supports all worlds.",
-            "time": "2019-08-19T18:28:09+00:00"
+            "time": "2019-09-10T19:43:44+00:00"
         }
     ],
     "packages-dev": [

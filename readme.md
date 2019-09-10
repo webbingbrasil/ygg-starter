@@ -61,10 +61,6 @@ Run the database migrations (**Set the database connection in .env before migrat
 
 **Populate the database with seed data. This can help you to quickly start testing the project with ready content.**
 
-Open the DummyDataSeeder and set the property values as per your requirement
-
-    database/seeds/DummyDataSeeder.php
-
 Run the database seeder and you're done
 
     php artisan db:seed

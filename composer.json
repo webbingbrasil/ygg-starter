@@ -16,7 +16,7 @@
         "laravel/tinker": "^1.0",
         "tymon/jwt-auth": "1.0.*",
         "league/fractal": "^0.18.0",
-        "webbingbrasil/ygg-cmf": "^1.0"
+        "webbingbrasil/ygg-cmf": "1.0.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
