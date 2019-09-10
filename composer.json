@@ -1,17 +1,21 @@
 {
-    "name": "laravel/laravel",
+    "name": "webbingbrasil/ygg-starter",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "The Ygg Starter project",
     "keywords": [
         "framework",
-        "laravel"
+        "laravel",
+        "ygg-cms"
     ],
     "license": "MIT",
     "require": {
         "php": "^7.1.3",
+        "barryvdh/laravel-cors": "^0.11.4",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/tinker": "^1.0",
+        "tymon/jwt-auth": "1.0.*",
+        "league/fractal": "^0.18.0",
         "webbingbrasil/ygg-cmf": "^1.0"
     },
     "require-dev": {
@@ -51,6 +55,7 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan vendor:publish --provider=Ygg\\YggServiceProvider --tag=assets --force",
             "@php artisan package:discover --ansi"
         ],
         "post-root-package-install": [

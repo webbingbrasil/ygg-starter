@@ -1,3 +1,6 @@
+public/vendor/
+public/storage/git
+
 
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,laravel,intellij+all
 # Edit at https://www.gitignore.io/?templates=node,linux,macos,windows,laravel,intellij+all

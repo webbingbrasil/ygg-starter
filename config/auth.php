@@ -1,5 +1,7 @@
 <?php
 
+use App\Data\Entities\User;
+
 return [
 
     /*
@@ -42,9 +44,9 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver' => 'jwt',
             'provider' => 'users',
-            'hash' => false,
+            'hash' => true,
         ],
     ],
 
@@ -68,7 +70,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Data\Entities\User::class,
         ],
 
         // 'users' => [

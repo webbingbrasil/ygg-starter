@@ -72,22 +72,14 @@ Run the database seeder and you're done
 ***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command
 
     php artisan migrate:refresh
-    
-## Create Admin User
 
+----------
 
-open tinker repl (to quit type `\q`)
+## Admin Login
 
-    php artisan tinker
+To access admin cms go to ``http://heliocare-cms.localhost/admin`` and access using one of users in seeded in database.
 
-in tinker type
-```php
-\App\Data\Entities\User::create([
-    'name' => 'Super Admin',
-    'email' => 'admin@teste.com.br',
-    'password' => bcrypt('webbing')
-]);
-```
+***Note*** : All users seeded password is ``password``
 
 ----------
 
@@ -121,28 +113,6 @@ in tinker type
 - `.env` - Environment variables can be set in this file
 
 ***Note*** : You can quickly set the database information and other variables in this file and have the application fully working.
-
-----------
-
-# Testing API
-
-Run the laravel development server
-
-    php artisan serve
-
-The api can now be accessed at
-
-    http://localhost:8000/api
-
-Request headers
-
-| **Required** 	| **Key**              	| **Value**            	|
-|----------	|------------------	|------------------	|
-| Yes      	| Content-Type     	| application/json 	|
-| Yes      	| X-Requested-With 	| XMLHttpRequest   	|
-| Optional 	| Authorization    	| Token {JWT}      	|
-
-Refer the [api specification](#api-specification) for more info.
 
 ----------
  
