@@ -18,11 +18,11 @@
 
 Clone the repository
 
-    git clone git@github.com:webbingbrasil/heliocare-cms.git
+    git clone git@github.com:webbingbrasil/ygg-starter.git
 
 Switch to the repo folder
 
-    cd heliocare-cms
+    cd ygg-starter
 
 Install all the dependencies using composer
 
@@ -46,8 +46,8 @@ Run the database migrations (**Set the database connection in .env before migrat
 
 **TL;DR command list**
 
-    git clone git@github.com:gothinkster/heliocare-cms.git
-    cd heliocare-cms
+    git clone git@github.com:webbingbrasil/ygg-starter.git
+    cd ygg-starter
     composer install
     cp .env.example .env
     php artisan key:generate
@@ -73,7 +73,7 @@ Run the database seeder and you're done
 
 ## Admin Login
 
-To access admin cms go to ``http://heliocare-cms.localhost/admin`` and access using one of users in seeded in database.
+To access admin cms go to ``http://ygg-starter.localhost/admin`` and access using one of users in seeded in database.
 
 ***Note*** : All users seeded password is ``password``
 
