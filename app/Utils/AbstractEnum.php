@@ -14,7 +14,6 @@
 
 namespace App\Utils;
 
-use Illuminate\Support\Collection;
 use ReflectionException;
 use UnexpectedValueException;
 
@@ -36,8 +35,8 @@ abstract class AbstractEnum implements \JsonSerializable, \Serializable
      * Set name of default constant key
      * @var string
      */
-    protected static $defaultKey = "__default";
-    private static $constCacheArray = null;
+    protected static $defaultKey = 'DEFAULT';
+    private static $constCacheArray;
     /**
      * Set if is strict.
      *
@@ -489,12 +488,12 @@ abstract class AbstractEnum implements \JsonSerializable, \Serializable
 
     public function serialize()
     {
-        return serialize(['__default' => $this->value]);
+        return serialize([static::$defaultKey => $this->value]);
     }
 
     public function unserialize($serialized)
     {
-        $this->value = unserialize($serialized)['__default'];
+        $this->value = unserialize($serialized, ['allowed_classes' => [static::class]])[static::$defaultKey];
         $this->_strict = false;
     }
 }

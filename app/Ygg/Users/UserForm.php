@@ -14,19 +14,24 @@ class UserForm extends AbstractForm
 {
     use WithFormEloquentUpdater;
 
+    protected const NAME_FIELD = 'name';
+    protected const EMAIL_FIELD = 'email';
+    protected const PASS_FIELD = 'password';
+    protected const PASS_CONFIRMATION_FIELD = 'password_confirmation';
+
     public function fields(): void
     {
         $this->addField(
-            TextField::make('name')
+            TextField::make(static::NAME_FIELD)
                 ->setLabel('Name')
         )->addField(
-            TextField::make('email')
+            TextField::make(static::EMAIL_FIELD)
                 ->setLabel('E-mail')
         )->addField(
-            PasswordField::make('password')
+            PasswordField::make(static::PASS_FIELD)
                 ->setLabel('Senha')
         )->addField(
-            PasswordField::make('password_confirmation')
+            PasswordField::make(static::PASS_CONFIRMATION_FIELD)
                 ->setLabel('Confirmar Senha')
         );
     }
@@ -34,10 +39,10 @@ class UserForm extends AbstractForm
     public function layout(): void
     {
         $this->addColumn(12, function (FormColumn $column) {
-            $column->withFields('name|6', 'email|6');
+            $column->withFields(static::NAME_FIELD.'|6', static::EMAIL_FIELD.'|6');
         })
             ->addColumn(12, function (FormColumn $column) {
-                $column->withFields('password|6','password_confirmation|6');
+                $column->withFields(static::PASS_FIELD.'|6', static::PASS_CONFIRMATION_FIELD.'|6');
             });
     }
 
@@ -51,21 +56,21 @@ class UserForm extends AbstractForm
     public function update($id, array $data)
     {
         $instance = $id ? User::findOrFail($id) : new User();
-        $fields = ['name', 'email'];
+        $fields = [static::NAME_FIELD, static::EMAIL_FIELD];
 
-        if(!$instance->exists() || !empty($data['password'])) {
-            $fields[] = 'password';
+        if(!empty($data[static::PASS_FIELD]) || !$instance->exists()) {
+            $fields[] = static::PASS_FIELD;
         }
 
-        if(!empty($data['password'])) {
-            $data['password'] = bcrypt($data['password']);
+        if(!empty($data[static::PASS_FIELD])) {
+            $data[static::PASS_FIELD] = bcrypt($data[static::PASS_FIELD]);
         }
 
         $this->save($instance, Arr::only($data, $fields));
 
         $this->notify('User saved')
             ->setLevelSuccess()
-            ->setAutoHide(true);
+            ->setAutoHide();
     }
 
     /**

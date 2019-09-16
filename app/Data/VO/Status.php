@@ -12,7 +12,7 @@ use App\Utils\AbstractEnum;
  */
 class Status extends AbstractEnum
 {
-    protected const __default = self::ACTIVE;
+    protected const DEFAULT = self::ACTIVE;
 
     public const INACTIVE = 0;
     public const ACTIVE = 1;

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Data\Entities\User;
 use App\Data\Transformer\UserTransformer;
+use App\Http\Traits\WithResponse;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -18,36 +19,29 @@ use Symfony\Component\HttpFoundation\Response as HttpResponse;
 
 class AuthController
 {
+    use WithResponse;
+
+    protected const USERNAME_FIELD = 'email';
+    protected const PASSWORLD_FIELD = 'password';
+
     /**
      * @param Request $request
      * @return HttpResponse
      */
     public function login(Request $request): HttpResponse
     {
-        $credentials = $request->only('email', 'password');
+        $credentials = $request->only(static::USERNAME_FIELD, static::PASSWORLD_FIELD);
         $validator = Validator::make($credentials, [
-            'email' => 'required|email',
-            'password' => 'required',
+            static::USERNAME_FIELD => 'required|email',
+            static::PASSWORLD_FIELD => 'required',
         ]);
 
         if ($validator->fails()) {
-            return new JsonResponse([
-                'errors' => [
-                    'status' => 401,
-                    'title' => 'Invalid Credentials',
-                    'detail' => 'The user credentials were incorrect.',
-                ]
-            ], 401);
+            return $this->respondWithError(401, 'Invalid Credentials', 'The user credentials were incorrect.');
         }
 
         if (!$token = auth()->attempt($credentials)) {
-            return new JsonResponse([
-                'errors' => [
-                    'status' => 401,
-                    'title' => 'Invalid Credentials',
-                    'detail' => 'The user credentials were incorrect.',
-                ]
-            ], 401);
+            return $this->respondWithError(401, 'Invalid Credentials', 'The user credentials were incorrect.');
         }
 
         return $this->respondWithToken($token);
@@ -69,19 +63,13 @@ class AuthController
      */
     public function sendPasswordReset(Request $request)
     {
-        $credentials = $request->only('email');
+        $credentials = $request->only(static::USERNAME_FIELD);
         $validator = Validator::make($credentials, [
-            'email' => 'required|email',
+            static::USERNAME_FIELD => 'required|email',
         ]);
 
         if ($validator->fails()) {
-            return new JsonResponse([
-                'errors' => [
-                    'status' => 422,
-                    'title' => 'Validation Error',
-                    'detail' => $validator->errors(),
-                ]
-            ], 422);
+            return $this->respondWithError(422, 'Validation Error', $validator->errors());
         }
 
         Password::broker()->sendResetLink($credentials);
