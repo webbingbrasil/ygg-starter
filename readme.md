@@ -1,3 +1,14 @@
+[![CircleCI](https://circleci.com/gh/webbingbrasil/ygg-starter.svg?style=svg)](https://circleci.com/gh/webbingbrasil/ygg-starter)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=security_rating)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=alert_status)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=bugs)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=code_smells)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=coverage)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=webbingbrasil_ygg_starter&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=webbingbrasil_ygg_starter)
+
+
 # Getting started
 
 ## Requirements
