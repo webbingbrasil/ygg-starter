@@ -1448,38 +1448,39 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "7016151ff3b0ff7b00e0400f20437692448bda6c"
+                "reference": "3a46ebcbdd0e3ca21e67b078c7bffb9928b10774"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/7016151ff3b0ff7b00e0400f20437692448bda6c",
-                "reference": "7016151ff3b0ff7b00e0400f20437692448bda6c",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/3a46ebcbdd0e3ca21e67b078c7bffb9928b10774",
+                "reference": "3a46ebcbdd0e3ca21e67b078c7bffb9928b10774",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/contracts": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "illuminate/http": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "illuminate/pagination": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "illuminate/routing": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "illuminate/validation": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
+                "illuminate/contracts": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "illuminate/http": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "illuminate/pagination": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "illuminate/routing": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "illuminate/support": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "illuminate/validation": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
                 "php": ">= 7.1",
                 "webonyx/graphql-php": "^0.13.2"
             },
             "require-dev": {
                 "bensampo/laravel-enum": "^1.22",
-                "haydenpierce/class-finder": "^0.3.3",
-                "laravel/lumen-framework": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "laravel/scout": "^4.0",
+                "haydenpierce/class-finder": "^0.4.0",
+                "laravel/lumen-framework": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
+                "laravel/scout": "^4.0 || ^5.0 || ^6.0 || ^7.0",
+                "localheinz/composer-normalize": "^1.3",
                 "mll-lab/graphql-php-scalars": "^2.1",
                 "mockery/mockery": "^1.0",
-                "orchestra/database": "3.5.*|3.6.*|3.7.*|3.8.*|3.9.*",
-                "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*|3.9.*",
+                "orchestra/database": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
+                "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
                 "phpbench/phpbench": "@dev",
                 "pusher/pusher-php-server": "^3.2"
             },
@@ -1530,7 +1531,7 @@
                 "laravel",
                 "laravel-graphql"
             ],
-            "time": "2019-09-04T12:54:31+00:00"
+            "time": "2019-10-09T06:58:46+00:00"
         },
         {
             "name": "opis/closure",
@@ -4997,12 +4998,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761"
+                "reference": "8a9c65d4dc3421877d806cb99b60d7f33689ca51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/ea693fa060702164985511acc3ceb5389c9ac761",
-                "reference": "ea693fa060702164985511acc3ceb5389c9ac761",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/8a9c65d4dc3421877d806cb99b60d7f33689ca51",
+                "reference": "8a9c65d4dc3421877d806cb99b60d7f33689ca51",
                 "shasum": ""
             },
             "conflict": {
@@ -5025,7 +5026,7 @@
                 "contao/core": ">=2,<3.5.39",
                 "contao/core-bundle": ">=4,<4.4.39|>=4.5,<4.7.5",
                 "contao/listing-bundle": ">=4,<4.4.8",
-                "contao/newsletter-bundle": ">=4,<4.1",
+                "datadog/dd-trace": ">=0.30,<0.30.2",
                 "david-garcia/phpwhois": "<=4.3.1",
                 "doctrine/annotations": ">=1,<1.2.7",
                 "doctrine/cache": ">=1,<1.3.2|>=1.4,<1.4.2",
@@ -5113,6 +5114,7 @@
                 "spoonity/tcpdf": "<6.2.22",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1|>=3,<3.0.1",
                 "stormpath/sdk": ">=0,<9.9.99",
+                "studio-42/elfinder": "<2.1.48",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "sylius/admin-bundle": ">=1,<1.0.17|>=1.1,<1.1.9|>=1.2,<1.2.2",
                 "sylius/grid": ">=1,<1.1.19|>=1.2,<1.2.18|>=1.3,<1.3.13|>=1.4,<1.4.5|>=1.5,<1.5.1",
@@ -5199,12 +5201,12 @@
             "authors": [
                 {
                     "name": "Marco Pivetta",
-                    "role": "maintainer",
-                    "email": "ocramius@gmail.com"
+                    "email": "ocramius@gmail.com",
+                    "role": "maintainer"
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-07-18T15:17:58+00:00"
+            "time": "2019-10-08T10:45:32+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
