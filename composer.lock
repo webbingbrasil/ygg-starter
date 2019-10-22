@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b0f917f434e57191a86e334e8eb6a503",
+    "content-hash": "268c8f799ec3166d7c8eca30797b246c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3741,16 +3741,16 @@
         },
         {
             "name": "webbingbrasil/ygg-cmf",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webbingbrasil/ygg-cmf.git",
-                "reference": "3493ee392ca760f7c0476996b2fd4cc17b1b29bf"
+                "reference": "f4880cd0634a9367f3270ebfdceadd5924d5e50c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/3493ee392ca760f7c0476996b2fd4cc17b1b29bf",
-                "reference": "3493ee392ca760f7c0476996b2fd4cc17b1b29bf",
+                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/f4880cd0634a9367f3270ebfdceadd5924d5e50c",
+                "reference": "f4880cd0634a9367f3270ebfdceadd5924d5e50c",
                 "shasum": ""
             },
             "require": {
@@ -3791,7 +3791,7 @@
                 }
             ],
             "description": "One CMF to support all our projects, just as yggdradil supports all worlds.",
-            "time": "2019-10-16T21:13:18+00:00"
+            "time": "2019-10-17T22:20:36+00:00"
         },
         {
             "name": "webonyx/graphql-php",
