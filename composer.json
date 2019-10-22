@@ -19,7 +19,7 @@
         "mll-lab/laravel-graphql-playground": "^1.1",
         "nuwave/lighthouse": "^4.3",
         "tymon/jwt-auth": "1.0.*",
-        "webbingbrasil/ygg-cmf": "1.0.0"
+        "webbingbrasil/ygg-cmf": "1.0.2"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
