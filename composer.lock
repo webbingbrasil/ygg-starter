@@ -1448,16 +1448,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.5.2",
+            "version": "v4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "b01fde25d6096d7ce936472bc9c8ac40d73e69f9"
+                "reference": "d25557c48728b2e1d86a8414a443355ac366da38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/b01fde25d6096d7ce936472bc9c8ac40d73e69f9",
-                "reference": "b01fde25d6096d7ce936472bc9c8ac40d73e69f9",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/d25557c48728b2e1d86a8414a443355ac366da38",
+                "reference": "d25557c48728b2e1d86a8414a443355ac366da38",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1532,7 @@
                 "laravel",
                 "laravel-graphql"
             ],
-            "time": "2019-10-17T15:56:51+00:00"
+            "time": "2019-10-21T11:04:44+00:00"
         },
         {
             "name": "opis/closure",
