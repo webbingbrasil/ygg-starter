@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "268c8f799ec3166d7c8eca30797b246c",
+    "content-hash": "5bbcff09f6f03f84b18af5314f4df0d4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3741,16 +3741,16 @@
         },
         {
             "name": "webbingbrasil/ygg-cmf",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webbingbrasil/ygg-cmf.git",
-                "reference": "f4880cd0634a9367f3270ebfdceadd5924d5e50c"
+                "reference": "e6a5e5884c40906e7bb8c3f0ed4b4a68e420b91d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/f4880cd0634a9367f3270ebfdceadd5924d5e50c",
-                "reference": "f4880cd0634a9367f3270ebfdceadd5924d5e50c",
+                "url": "https://api.github.com/repos/webbingbrasil/ygg-cmf/zipball/e6a5e5884c40906e7bb8c3f0ed4b4a68e420b91d",
+                "reference": "e6a5e5884c40906e7bb8c3f0ed4b4a68e420b91d",
                 "shasum": ""
             },
             "require": {
@@ -3791,7 +3791,7 @@
                 }
             ],
             "description": "One CMF to support all our projects, just as yggdradil supports all worlds.",
-            "time": "2019-10-17T22:20:36+00:00"
+            "time": "2019-10-30T20:19:59+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -4999,12 +4999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85"
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/eb59d9f35a47f567ae15e7179d7c666489cd4b85",
-                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
                 "shasum": ""
             },
             "conflict": {
@@ -5207,7 +5207,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-10-09T14:04:58+00:00"
+            "time": "2019-10-29T22:11:03+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
