@@ -1448,16 +1448,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.5.3",
+            "version": "v4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "d25557c48728b2e1d86a8414a443355ac366da38"
+                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/d25557c48728b2e1d86a8414a443355ac366da38",
-                "reference": "d25557c48728b2e1d86a8414a443355ac366da38",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/e1f94429804b04385f3d6e3c7030d288180cf304",
+                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1532,7 @@
                 "laravel",
                 "laravel-graphql"
             ],
-            "time": "2019-10-21T11:04:44+00:00"
+            "time": "2019-11-04T16:51:39+00:00"
         },
         {
             "name": "opis/closure",
@@ -4999,12 +4999,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85"
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/eb59d9f35a47f567ae15e7179d7c666489cd4b85",
-                "reference": "eb59d9f35a47f567ae15e7179d7c666489cd4b85",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
+                "reference": "f8c8349a4b12a26edfa8b21d07d3dbeb6dcedcfa",
                 "shasum": ""
             },
             "conflict": {
@@ -5207,7 +5207,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2019-10-09T14:04:58+00:00"
+            "time": "2019-10-29T22:11:03+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
