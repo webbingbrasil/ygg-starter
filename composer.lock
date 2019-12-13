@@ -1448,16 +1448,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.6.0",
+            "version": "v4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304"
+                "reference": "c048a6a1aa9af4fec71ff4a397a44d2d3938a54d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/e1f94429804b04385f3d6e3c7030d288180cf304",
-                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/c048a6a1aa9af4fec71ff4a397a44d2d3938a54d",
+                "reference": "c048a6a1aa9af4fec71ff4a397a44d2d3938a54d",
                 "shasum": ""
             },
             "require": {
@@ -1483,6 +1483,7 @@
                 "orchestra/database": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
                 "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
                 "phpbench/phpbench": "@dev",
+                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.4",
                 "pusher/pusher-php-server": "^3.2"
             },
             "suggest": {
@@ -1532,7 +1533,7 @@
                 "laravel",
                 "laravel-graphql"
             ],
-            "time": "2019-11-04T16:51:39+00:00"
+            "time": "2019-12-13T07:09:34+00:00"
         },
         {
             "name": "opis/closure",
