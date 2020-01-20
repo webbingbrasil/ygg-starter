@@ -63,12 +63,12 @@
             "version": "v0.11.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/barryvdh/laravel-cors.git",
+                "url": "https://github.com/fruitcake/laravel-cors.git",
                 "reference": "03492f1a3bc74a05de23f93b94ac7cc5c173eec9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-cors/zipball/03492f1a3bc74a05de23f93b94ac7cc5c173eec9",
+                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/03492f1a3bc74a05de23f93b94ac7cc5c173eec9",
                 "reference": "03492f1a3bc74a05de23f93b94ac7cc5c173eec9",
                 "shasum": ""
             },
@@ -1448,16 +1448,16 @@
         },
         {
             "name": "nuwave/lighthouse",
-            "version": "v4.6.0",
+            "version": "v4.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nuwave/lighthouse.git",
-                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304"
+                "reference": "f39f255fc4b68817dcd29e87e4334c998ba78772"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/e1f94429804b04385f3d6e3c7030d288180cf304",
-                "reference": "e1f94429804b04385f3d6e3c7030d288180cf304",
+                "url": "https://api.github.com/repos/nuwave/lighthouse/zipball/f39f255fc4b68817dcd29e87e4334c998ba78772",
+                "reference": "f39f255fc4b68817dcd29e87e4334c998ba78772",
                 "shasum": ""
             },
             "require": {
@@ -1472,7 +1472,7 @@
                 "webonyx/graphql-php": "^0.13.2"
             },
             "require-dev": {
-                "bensampo/laravel-enum": "^1.22",
+                "bensampo/laravel-enum": "^1.28",
                 "haydenpierce/class-finder": "^0.4.0",
                 "laravel/lumen-framework": "5.5.* || 5.6.* || 5.7.* || 5.8.* || ^6.0",
                 "laravel/scout": "^4.0 || ^5.0 || ^6.0 || ^7.0",
@@ -1483,12 +1483,13 @@
                 "orchestra/database": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
                 "orchestra/testbench": "3.5.* || 3.6.* || 3.7.* || 3.8.* || 3.9.* || ^4.0",
                 "phpbench/phpbench": "@dev",
+                "phpunit/phpunit": "^6.5 || ^7.5 || ^8.4",
                 "pusher/pusher-php-server": "^3.2"
             },
             "suggest": {
                 "bensampo/laravel-enum": "Convenient enum definitions that can easily be registered in your Schema",
                 "laravel/scout": "Required for the @search directive",
-                "mll-lab/graphql-php-scalars": "Useful scalar types, required for @whereConstraints",
+                "mll-lab/graphql-php-scalars": "Useful scalar types, required for @whereConditions",
                 "mll-lab/laravel-graphql-playground": "GraphQL IDE for better development workflow - integrated with Laravel"
             },
             "type": "library",
@@ -1496,7 +1497,8 @@
                 "laravel": {
                     "providers": [
                         "Nuwave\\Lighthouse\\LighthouseServiceProvider",
-                        "Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider"
+                        "Nuwave\\Lighthouse\\SoftDeletes\\SoftDeletesServiceProvider",
+                        "Nuwave\\Lighthouse\\OrderBy\\OrderByServiceProvider"
                     ],
                     "aliases": {
                         "graphql": "Nuwave\\Lighthouse\\GraphQL"
@@ -1532,7 +1534,7 @@
                 "laravel",
                 "laravel-graphql"
             ],
-            "time": "2019-11-04T16:51:39+00:00"
+            "time": "2020-01-17T13:39:21+00:00"
         },
         {
             "name": "opis/closure",
