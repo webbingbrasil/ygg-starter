@@ -1,0 +1,19 @@
+name: ygg-starter
+proxy:
+  appserver:
+  - ygg-starter.lndo.site
+services: # Define your services
+  appserver:  # Create a web server container
+    type: php:7.3 # Specify what version of php to use
+    via: apache   # This could be nginx, should you choose so
+    webroot: public  # Specify webroot
+tooling:  # These toolings allow you to connect land <command> to the appropriate containers
+  composer: # Call with "lando composer..."
+    service: appserver
+    description: Run composer commands
+    cmd: composer --ansi
+  php:      # Call with "lando php..."
+    service: appserver
+  artisan:      # Call with "lando php..."
+    service: appserver
+    cmd: php artisan
