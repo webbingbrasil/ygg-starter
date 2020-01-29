@@ -38,8 +38,8 @@ class ScreenExample extends Screen
     {
         return [
             Layout::columns([
-                'left' => [],
-                'right' => [],
+                'teste1',
+                'teste2'
             ])
         ];
     }
