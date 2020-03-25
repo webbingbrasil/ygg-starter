@@ -99,8 +99,8 @@ return [
     */
 
     'template' => [
-        'header' => null,
-        'footer' => null,
+        'header' => 'brand.header',
+        'footer' => 'brand.footer',
     ],
 
 ];
