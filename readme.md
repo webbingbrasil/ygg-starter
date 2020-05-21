@@ -57,7 +57,7 @@ $ php artisan ygg:install
 Create a admin user
 
 ```php
-php artisan orchid:admin admin admin@admin.com password
+php artisan ygg:admin admin admin@admin.com password
 ```    
 
 
@@ -69,7 +69,7 @@ php artisan orchid:admin admin admin@admin.com password
     cp .env.example .env
     php artisan key:generate
     php artisan ygg:install
-    php artisan orchid:admin admin admin@admin.com password
+    php artisan ygg:admin admin admin@admin.com password
     
 
 ## Admin Login
