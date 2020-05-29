@@ -1,7 +1,6 @@
 public/vendor/
 public/storage/git
 packages/
-.lando.yml
 
 
 # Created by https://www.gitignore.io/api/node,linux,macos,windows,laravel,intellij+all
