@@ -1,8 +1,10 @@
 # Getting started
 
+This project use [Laravel](https://laravel.com/docs/7.x) with [Ygg CMF](https://github.com/webbingbrasil/ygg-cmf)
+
 ## Requirements
 
-- PHP >= 7.2
+- PHP >= 7.3
 - Laravel = 7.0
 - Ygg CMF = 2.0
 - BCMath PHP Extension
@@ -13,6 +15,19 @@
 - PDO PHP Extension
 - Tokenizer PHP Extension
 - XML PHP Extension
+
+## Dependencies Included
+
+- [Laravel](https://laravel.com/docs/7.x)
+- [Ygg CMF](https://github.com/webbingbrasil/ygg-cmf)
+- [Larave Enum](https://github.com/bensampo/laravel-enum)
+- [Laravel Cors](https://github.com/fruitcake/laravel-cors)
+- [Trusted Proxies](https://github.com/fideloper/TrustedProxy)
+- [Laravel Tinker](https://github.com/laravel/tinker)
+- [Laravel Excel](https://laravel-excel.com/)
+- [League Fractal](https://fractal.thephpleague.com/)
+- [Guzzle](https://github.com/guzzle/guzzle/)
+- [Sentry](https://github.com/getsentry/sentry-laravel)
 
 ## Installation
 
@@ -28,13 +43,29 @@ Switch to the repo folder
 $ cd ygg-starter
 ```
 
-Install all the dependencies using composer
+Install all the back dependencies using **composer**
 
 ```bash
 $ composer install
 ```
 
-Copy the example env file and make the required configuration changes in the .env file
+Install all the front dependencies using **yarn**
+
+```bash
+$ yarn
+```
+
+Make the required configuration changes in lando file **.lando.yml**
+
+```bash
+name: ygg-starter
+proxy:
+  appserver:
+    - ygg-starter.lndo.site
+...
+```
+
+Copy the example env file and make the required configuration changes in the **.env** file
 
 ```bash
 $ cp .env.example .env
@@ -77,13 +108,6 @@ php artisan ygg:admin admin admin@admin.com password
 To access admin cms go to ``http://ygg-starter.localhost/dashboard`` and access using admin user created in installation.
 
 # Code overview
-
-## Dependencies
-
-- [ygg-cmf](https://github.com/webbingbrasil/ygg-cmf) - For CMS development
-- [laravel-enum](https://github.com/BenSampo/laravel-enum) - For handling enum
-- [laravel-cors](https://github.com/fruitcake/laravel-cors) - For handling Cross-Origin Resource Sharing (CORS)
-- [TrustedProxy](https://github.com/fideloper/TrustedProxy) - For handling trusted proxies
 
 ## Folders
 
